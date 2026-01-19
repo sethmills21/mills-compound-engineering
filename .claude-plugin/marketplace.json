@@ -19,7 +19,7 @@
       },
       "homepage": "https://github.com/sethmills21/mills-compound-engineering",
       "tags": ["nodejs", "swift", "vue", "code-review"],
-      "source": "."
+      "source": "./plugins/mills-compound-engineering"
     }
   ]
 }
