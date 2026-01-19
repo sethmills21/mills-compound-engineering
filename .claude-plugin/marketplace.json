@@ -1,0 +1,25 @@
+{
+  "name": "mills-compound-engineering",
+  "owner": {
+    "name": "Seth Mills",
+    "url": "https://github.com/sethmills21"
+  },
+  "metadata": {
+    "description": "Personal Claude Code plugin marketplace",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mills-compound-engineering",
+      "description": "Personal Claude Code plugin for Node.js/Express, Swift/iOS, and Vue/Nuxt development. Includes 11 specialized agents.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Seth Mills",
+        "url": "https://github.com/sethmills21"
+      },
+      "homepage": "https://github.com/sethmills21/mills-compound-engineering",
+      "tags": ["nodejs", "swift", "vue", "code-review"],
+      "source": "."
+    }
+  ]
+}
