@@ -1,6 +1,21 @@
 # mills-compound-engineering
 
-Personal Claude Code plugin for Node.js/Express, Swift/iOS, and Vue/Nuxt development.
+A lean, personalized fork of [Every's compound-engineering plugin](https://github.com/EveryInc/compound-engineering-plugin) for Claude Code.
+
+## Why This Fork?
+
+The original [compound-engineering plugin](https://github.com/EveryInc/compound-engineering-plugin) is excellent (read their [blog post](https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents) explaining the philosophy), but it includes 24+ agents and many features I don't use. Loading all those agent descriptions into context costs ~15-16k tokens per session.
+
+This fork is:
+- **Lean**: 11 agents vs 24+ (saves ~10k tokens/session)
+- **Stack-specific**: Custom agents for my exact stack (Node/Express, Swift/iOS, Vue/Nuxt)
+- **Personalized**: Enforces my coding style preferences across all agents
+
+## My Stack
+
+- **Backend**: Node.js, Express, MongoDB, Redis
+- **iOS**: Swift 6, SwiftUI, UIKit
+- **Web**: Vue 2, Nuxt 2
 
 ## Stack-Specific Agents
 
@@ -94,3 +109,23 @@ mills-compound-engineering/
     ├── commands/            # Slash commands
     └── skills/              # Interactive skills
 ```
+
+## Creating Your Own Fork
+
+If you want to create a lean, personalized plugin for your stack:
+
+1. **Start from Every's plugin** or this repo as a template
+2. **Delete agents you don't use** - be ruthless, each agent costs tokens
+3. **Create stack-specific agents** - copy an existing agent and customize for your framework
+4. **Enforce your style** - add your coding preferences to each agent's instructions
+5. **Rename everything** - update `plugin.json`, folder names, and `marketplace.json`
+
+Key files to customize:
+- `plugins/*/agents/**/*.md` - Agent instructions
+- `plugins/*/.claude-plugin/plugin.json` - Plugin identity
+- `.claude-plugin/marketplace.json` - Registry metadata
+
+## Credits
+
+- [Every's compound-engineering plugin](https://github.com/EveryInc/compound-engineering-plugin) - The original
+- [Compound Engineering blog post](https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents) - The philosophy behind it
