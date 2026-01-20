@@ -125,7 +125,19 @@ Key files to customize:
 - `plugins/*/.claude-plugin/plugin.json` - Plugin identity
 - `.claude-plugin/marketplace.json` - Registry metadata
 
+## Complementary Plugins
+
+These plugins work great alongside this one:
+
+| Plugin | Purpose | Install |
+|--------|---------|---------|
+| [Swift Concurrency Agent Skill](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill) | Deep Swift 6 concurrency expertise from [@AvdLee](https://twitter.com/twannl) | `claude plugin marketplace add AvdLee/Swift-Concurrency-Agent-Skill && claude plugin install swift-concurrency@swift-concurrency-agent-skill` |
+
+The `swift-ios-reviewer` in this plugin handles general Swift/iOS patterns and code style, while AvdLee's skill provides deep expertise on async/await, actors, Sendable, and Swift 6 migration.
+
 ## Credits
 
-- [Every's compound-engineering plugin](https://github.com/EveryInc/compound-engineering-plugin) - The original
+- [Every's compound-engineering plugin](https://github.com/EveryInc/compound-engineering-plugin) - The original plugin this is forked from
 - [Compound Engineering blog post](https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents) - The philosophy behind it
+- [AvdLee's Swift Concurrency Agent Skill](https://github.com/AvdLee/Swift-Concurrency-Agent-Skill) - Swift concurrency inspiration
+- [Swift Concurrency Course](https://www.swiftconcurrencycourse.com/) - Antoine van der Lee's comprehensive course
